@@ -1,13 +1,19 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './pages/admin/home/home.component';
 
 export const routes: Routes = [
     {
-        path: "*",
-        redirectTo: "home",
+        path: "",
+        redirectTo: "admin/home",
+        pathMatch: "full"
     }, 
     {
-        path: "home",
-        component: HomeComponent
+        path: "admin",
+        children: [
+            {
+                path: "home",
+                component: HomeComponent
+            }
+        ]
     }
 ];
