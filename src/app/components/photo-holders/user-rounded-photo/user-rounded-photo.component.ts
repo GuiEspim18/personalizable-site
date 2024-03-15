@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { HTMLComponent } from '../../../utils/classes/HTMLComponent';
+import { HTMLPhotoComponent } from '../../../utils/classes/HTMLPhotoComponent';
 
 @Component({
   selector: 'app-user-rounded-photo',
@@ -9,5 +9,5 @@ import { HTMLComponent } from '../../../utils/classes/HTMLComponent';
   templateUrl: './user-rounded-photo.component.html',
   styleUrl: './user-rounded-photo.component.scss'
 })
-export class UserRoundedPhotoComponent extends HTMLComponent{
+export class UserRoundedPhotoComponent extends HTMLPhotoComponent{
 }

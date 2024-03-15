@@ -1,12 +1,11 @@
 import { Component, Input } from "@angular/core";
 
 @Component({
-    selector: '',
-    standalone: true,
     template: ""
 })
 export class HTMLComponent {
     @Input() public size: number = 0;
+    @Input() public text: string = "";
 
 
     // formating the size provided by user

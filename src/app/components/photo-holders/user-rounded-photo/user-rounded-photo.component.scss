@@ -1,4 +1,9 @@
+@import "../../../../assets/css/colors.scss";
+
 .user-rounded-photo {
-    background-color: #f0f0f0;
+    background-color: $main-white;
     display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
